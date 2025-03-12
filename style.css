@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    display: grid;
+    place-items: centre;
+    background: rgb(1,43,57);
+    font-family: 'Lato', sans-serif;
+   margin-top: 50px;
+
+}
+.wrapper{
+    width: 420px;
+    height: 110px;
+    background: red;
+    margin-top: 6%;
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 33%;
+    background: linear-gradient(135deg, #14ffe9,#ffeb3B, #ff00e0);
+}
+.wrapper .clock{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 405px;
+    height: 95px;
+    background: rgb(1, 43, 57);
+}
+.clock #time{
+    font-size: 65px;
+    color: white;
+    padding: 12px;
+}
