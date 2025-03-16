@@ -40,3 +40,28 @@ getCheese()
     .catch((error) => {
         console.error("Error:", error);
     });
+
+// Promises
+let pro= new Promise(function(resolve,reject){
+   setTimeout(function(){
+    let API = false;
+    if(API){
+        resolve("My Promise Resolved");
+    }
+    else{
+        reject("My promise is rejected ");
+    }
+   },3000)
+});
+let data = pro;
+console.log(data);
+
+pro.then(function(resolve){
+    console.log(resolve);
+    
+}).catch(function(reject){
+    console.log(reject);
+    
+})
+
+
